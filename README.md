@@ -1,7 +1,8 @@
 # Maternal Health Monitoring App 
 
-Aim: To develop a mobile app that enables mothers to track key health metrics and receive alerts if they are at risk of complications.
-Objectives:
+## Aim: 
+To develop a mobile app that enables mothers to track key health metrics and receive alerts if they are at risk of complications.
+## Objectives:
 Design an intuitive interface for recording and visualizing health data (e.g., blood pressure, heart rate).
 Implement risk analysis algorithms to alert users of potential health issues.
 Integrate a map feature to locate nearby maternal wards.
