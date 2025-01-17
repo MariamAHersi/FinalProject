@@ -22,26 +22,26 @@ Healthcare providers
 Maternal care facilities (NHS and private).
 
 ## Features
-- **Health Metric Tracking: Track important metrics like blood pressure, heart rate, weight, and more to monitor maternal health.
-- **Real-time Alerts: Receive notifications if health metrics indicate a high-risk situation (e.g., preeclampsia or gestational diabetes).
-- **Maternal Ward Locator: Find nearby maternal wards, including NHS and private hospitals, using an interactive map feature.
-- **Data Analysis: Analyze health trends over time to provide insights into overall maternal health.
-- **User-friendly Interface: Intuitive design that is easy for expecting mothers to navigate.
+- Health Metric Tracking: Track important metrics like blood pressure, heart rate, weight, and more to monitor maternal health.
+- Real-time Alerts: Receive notifications if health metrics indicate a high-risk situation (e.g., preeclampsia or gestational diabetes).
+- Maternal Ward Locator: Find nearby maternal wards, including NHS and private hospitals, using an interactive map feature.
+- Data Analysis: Analyze health trends over time to provide insights into overall maternal health.
+- User-friendly Interface: Intuitive design that is easy for expecting mothers to navigate.
 
 ## Tech Stack
-- **Frontend: React Native
-- **Backend: Node.js, Express
-- **Database: MongoDB
-- **Mapping API: Google Maps API (for maternal ward locator)
-- **Notification System: Firebase Cloud Messaging
+- Frontend: React Native
+- Backend: Node.js, Express
+- Database: MongoDB
+- Mapping API: Google Maps API (for maternal ward locator)
+- Notification System: Firebase Cloud Messaging
 Installation
 
 To run the app locally, follow the steps below:
 
 ### Prerequisites
-- **Node.js
-- **npm (Node Package Manager)
-- **MongoDB (for backend)
+- Node.js
+- npm (Node Package Manager)
+- MongoDB (for backend)
 
 ### Steps
 1.Clone the repository:
@@ -89,7 +89,7 @@ npx react-native run-android
 2. Register and set up your profile.
 3. Start logging your health metrics such as blood pressure, heart rate, and weight.
 4. Receive alerts when any metric crosses a threshold indicating a potential risk.
-5. Use the Maternal Ward Locator to find nearby hospitals offering maternal services.
+5.Use the Maternal Ward Locator to find nearby hospitals offering maternal services.
 
 ### Contributing
 1. Fork the repository.
