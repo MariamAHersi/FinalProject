@@ -1,1 +1,63 @@
-node_modules
+# Node modules (for both frontend and backend)
+node_modules/
+
+# Environment variable files
+.env
+
+# Build output (e.g., for React or any build folder)
+build/
+dist/
+
+# Logs
+*.log
+
+# MacOS-specific files
+.DS_Store
+
+# VSCode specific files
+.vscode/
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+
+# Backend
+backend/node_modules/
+backend/build/
+
+# Server files (e.g., logs or temporary files)
+server/logs/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+app-example
