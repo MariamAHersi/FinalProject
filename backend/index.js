@@ -15,10 +15,12 @@ app.use(bodyParser.json());
 // Import Routes
 const userRoutes = require("./routes/userRoutes");
 const healthMetricsRoutes = require("./routes/healthMetricsRoutes");
+const uploadRoutes = require('./routes/uploadRoutes');
 
 // Routes Middleware
 app.use("/api/users", userRoutes);
 app.use("/api/health-metrics", healthMetricsRoutes);
+app.use('/api', uploadRoutes);
 
 // Connect to MongoDB
 mongoose
