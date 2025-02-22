@@ -9,4 +9,4 @@ const appPool = new Pool({
   port: 5432,
 });
 
-module.exports = appPool;// app-db.js
+module.exports = pool;// app-db.js

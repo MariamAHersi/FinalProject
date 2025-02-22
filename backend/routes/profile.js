@@ -1,28 +1,24 @@
-const express = require('express');
-const router = express.Router();
-const DatabaseUploader = require('../utils/databaseUpload');
-const multer = require('multer');
-const upload = multer({ dest: 'uploads/' });
+const router = require('express').Router();
+const db = require('../db/app-db');
+const { auth } = require('../middleware/auth');
 
-router.post('/upload', upload.single('file'), async (req, res) => {
-  try {
-    const schema = {
-      // Define your schema here
-      name: String,
-      age: Number,
-      // ... other fields
-    };
+// Create profile
+router.post('/', auth, async (req, res) => {
+    try {
+        const { firstName, lastName, dateOfBirth } = req.body;
+        // Add profile creation logic
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
 
-    const count = await DatabaseUploader.uploadDataset(
-      req.file.path,
-      'YourModelName',
-      schema
-    );
-
-    res.json({ message: `Successfully uploaded ${count} documents` });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
+// Get profile
+router.get('/:id', auth, async (req, res) => {
+    try {
+        // Add profile retrieval logic
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
 });
 
 module.exports = router;
