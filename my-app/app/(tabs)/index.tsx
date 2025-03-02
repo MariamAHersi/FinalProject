@@ -3,12 +3,11 @@ import React from 'react'
 
 const app = () => {
   
-  const logoImage = require('./assets/mama_logo.jpeg');
+  const logoImage = require('@/assets/images/mama_logo.png');
 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.contentContainer}>
-        <Text style={styles.text}>MamaMatters</Text>
         
         <Image
           source={logoImage}
@@ -48,7 +47,7 @@ const styles = StyleSheet.create({
   logo: {
     width: 374,
     height: 364,
-    marginTop: 20,
+    marginTop: 170,
   },
   button: {
     backgroundColor: '#e6a3d5',
