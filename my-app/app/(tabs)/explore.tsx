@@ -3,7 +3,7 @@ import React from 'react'
 
 const app = () => {
 
-  const { height } = Dimensions.get('window');
+  const { height, width } = Dimensions.get('window');
   const shape = require('@/assets/images/shape.png');
   const shape1 = require('@/assets/images/shape-1.png');
   const shape2 = require('@/assets/images/shape-2.png');
@@ -42,45 +42,49 @@ const styles = StyleSheet.create({
     color: '#000000',
     fontSize: 32,
     fontWeight: '600',
-    left: 120,
+    alignSelf: 'center',
     position: 'absolute',
-    top: 130,
+    top: 100,
   },
   shape: {
-    height: 379,
-    left: 3,
+    height: 470,
+    left: -50,
     position: 'absolute',
-    top: 175,
+    top: 80,
     alignItems: 'center',
-    width: 201,
+    width: 290,
+    transform: [{ scale: 0.7 }],
   },
   shape1: {
-    height: 315,
-    right: 3,
+    height: 320,
+    width: 280,
+    right: -50,
     position: 'absolute',
-    top: 30,
-    width: 201,
+    top: -10,
+    transform: [{ scale: 0.9}],
     alignItems: 'center',
   },
   shape2: {
-    height: 121,
-    left: 34,
+    height: 130,
+    alignSelf: 'center',
     position: 'absolute',
-    top: 530,
-    width: 131,
+    top: 200,
+    width: 130,
+    transform: [{ scale: 1.3}],
   },
   modal:{
-    height: 121,
-    left: 163,
+    height: 500,
+    width: 455,
+    left: -25,
     position: 'absolute',
-    top: 430,
-    width: 200,
+    top: 350,
+    transform: [{ scale: 0.9}],
   },
   rectangle: {
-    height: 121,
+    height: 122,
     left: 34,
     position: 'absolute',
-    top: 530,
+    top: 435,
     width: 131,
   }
 })
