@@ -1,0 +1,135 @@
+import {Dimensions, View, Text, StyleSheet, Image, SafeAreaView } from 'react-native'
+import React from 'react'
+
+const app = () => {
+  const { height, width } = Dimensions.get('window');
+  const shape = require('@/assets/images/shape.png');
+  const shape1 = require('@/assets/images/shape-1.png');
+  const percentageCircle = require('@/assets/images/shape-2.png');
+  const modal = require('@/assets/images/modal.png');
+  const rectangle = require('@/assets/images/rectangle.png');
+
+  return (
+    <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
+        <Text style={styles.text}>RISK ALERT</Text>
+
+        <Image source={shape} style={styles.shape} />
+        <Image source={shape1} style={styles.shape1} />
+        <Image source={percentageCircle} style={styles.percentageCircle} />
+        <Image source={modal} style={styles.modal} />
+
+        <View style={styles.percentageCircle}>
+          <Text style={styles.percentageText}>67%</Text>
+        </View>
+        
+        <View style={styles.modal}></View>
+            <Image source={rectangle} style={styles.rectangle} />
+
+            <Text style={styles.headerText}>Body Temp</Text>
+            <Text style={styles.headerText}>Blood Pressure</Text>
+
+            <View style={styles.rectangle}>
+              <Text style={styles.detailValue}>100°</Text>
+              <Text style={styles.detailLabel}>Fahrenheit</Text>
+              <Text style={styles.detailValue}>37°</Text>
+              <Text style={styles.detailLabel}>Celsius</Text>
+            </View>
+
+        </View>
+    </SafeAreaView>
+  );
+}
+
+export default app
+
+
+const styles = StyleSheet.create({
+  container:{
+    flex: 1,
+    backgroundColor: '#fff4fe',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '100%',
+  },
+  text:{
+    color: '#000000',
+    fontSize: 32,
+    fontWeight: '600',
+    alignSelf: 'center',
+    position: 'absolute',
+    top: 100,
+  },
+  shape: {
+    height: 470,
+    left: -50,
+    position: 'absolute',
+    top: 80,
+    alignItems: 'center',
+    width: 290,
+    transform: [{ scale: 0.7 }],
+  },
+  shape1: {
+    height: 320,
+    width: 280,
+    right: -50,
+    position: 'absolute',
+    top: -10,
+    transform: [{ scale: 0.9}],
+    alignItems: 'center',
+  },
+  percentageCircle: {
+    height: 130,
+    alignSelf: 'center',
+    alignItems: 'center',
+    justifyContent: "center",
+    position: 'absolute',
+    top: 200,
+    width: 130,
+    transform: [{ scale: 1.3}],
+    elevation: 3,
+  },
+  percentageText: {
+    fontSize: 48,
+    fontWeight: 'bold',
+    color: 'black',
+    elevation: 5,
+  },
+  modal:{
+    height: 500,
+    width: 455,
+    justifyContent: center, 
+    alignItems: center, 
+    left: -25,
+    position: 'absolute',
+    top: 350,
+    transform: [{ scale: 0.9}],
+  },
+  rectangle: {
+    height: 120,
+    position: 'absolute',
+    top: 600,
+    left: 34,
+    width: 131,
+    alignItems: center,
+    justifyContent: center,
+    transform: [{ scale: 1.0}],
+  },
+  detailLabel: {
+    color: '#000000',
+    fontWeight: 'bold',
+    marginBottom: 5,
+  },
+  detailValue: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: '#CD3DB9',
+  },
+  headerText: {
+    position: 'absolute',
+    top: 60,
+    fontSize: 24,
+    fontWeight: '600',
+    color: 'black',
+  },
+})
