@@ -8,6 +8,15 @@ const app = () => {
   const percentageCircle = require('@/assets/images/shape-2.png');
   const modal = require('@/assets/images/modal.png');
   const rectangle = require('@/assets/images/rectangle.png');
+  const rectangle1 = require('@/assets/images/rectangle.png');
+  const rectangle2 = require('@/assets/images/rectangle-162.png');
+  const heart = require('@/assets/images/group.png');
+  const heartbeat = require('@/assets/images/vector.png');
+  const gradient = require('@/assets/images/rectangle-163.png');
+
+
+
+
 
   return (
     <SafeAreaView style={styles.container}>
@@ -25,6 +34,9 @@ const app = () => {
         
         <View style={styles.modal}></View>
             <Image source={rectangle} style={styles.rectangle} />
+            <Image source={rectangle1} style={styles.rectangle1} />
+            <Image source={rectangle2} style={styles.rectangle1} />
+
 
             <Text style={styles.headerText}>Body Temp</Text>
             <Text style={styles.headerText}>Blood Pressure</Text>
@@ -34,6 +46,13 @@ const app = () => {
               <Text style={styles.detailLabel}>Fahrenheit</Text>
               <Text style={styles.detailValue}>37°</Text>
               <Text style={styles.detailLabel}>Celsius</Text>
+            </View>
+
+            <View style={styles.rectangle1}>
+              <Text style={styles.detailLabel}>Systolic</Text>
+              <Text style={styles.detailValue}>140</Text>
+              <Text style={styles.detailLabel}>Diastolic</Text>
+              <Text style={styles.detailValue}>90</Text>
             </View>
 
         </View>
@@ -47,6 +66,7 @@ export default app
 const styles = StyleSheet.create({
   container:{
     flex: 1,
+    flexDirection: 'column',  // Stack items vertically
     backgroundColor: '#fff4fe',
     alignItems: 'center',
     justifyContent: 'center',
@@ -82,7 +102,7 @@ const styles = StyleSheet.create({
     height: 130,
     alignSelf: 'center',
     alignItems: 'center',
-    justifyContent: "center",
+    justifyContent:'center',
     position: 'absolute',
     top: 200,
     width: 130,
@@ -98,8 +118,8 @@ const styles = StyleSheet.create({
   modal:{
     height: 500,
     width: 455,
-    justifyContent: center, 
-    alignItems: center, 
+    justifyContent:'center', 
+    alignItems: 'center', 
     left: -25,
     position: 'absolute',
     top: 350,
@@ -111,8 +131,28 @@ const styles = StyleSheet.create({
     top: 600,
     left: 34,
     width: 131,
-    alignItems: center,
-    justifyContent: center,
+    alignItems: 'center',
+    justifyContent:'center',
+    transform: [{ scale: 1.0}],
+  },
+  rectangle1: {
+    height: 120,
+    position: 'absolute',
+    top: 450,
+    left: 34,
+    width: 131,
+    alignItems: 'center',
+    justifyContent:'center',
+    transform: [{ scale: 1.0}],
+  },
+  rectangle2: {
+    height: 120,
+    position: 'absolute',
+    top: 450,
+    left: 34,
+    width: 131,
+    alignItems: 'center',
+    justifyContent:'center',
     transform: [{ scale: 1.0}],
   },
   detailLabel: {
