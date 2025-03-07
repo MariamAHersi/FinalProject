@@ -9,10 +9,10 @@ const app = () => {
   const modal = require('@/assets/images/modal.png');
   const rectangle = require('@/assets/images/rectangle.png');
   const rectangle1 = require('@/assets/images/rectangle.png');
-  const rectangle2 = require('@/assets/images/rectangle-162.png');
+  const rectangle2 = require('@/assets/images/rectangle-162');
   const heart = require('@/assets/images/group.png');
   const heartbeat = require('@/assets/images/vector.png');
-  const gradient = require('@/assets/images/rectangle-163.png');
+  const gradients = require('@/assets/images/rectangle-163.png');
 
 
 
